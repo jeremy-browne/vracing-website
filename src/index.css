@@ -1,35 +1,47 @@
-* {
-    font-family: sans-serif;
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(255, 0, 0, 0.5));
     background-color: black;
-    color: white;
-    box-sizing: border-box;
 }
 
 .container {
-    width: 100%;
+    box-sizing: border-box;
+    align-content: center;
+    font-family: sans-serif;
+    box-sizing: content-box;
+    color: white;
     max-width: 100%;
-    height: auto;
+    height: 100vh;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-image: url("http://placekitten.com/200/300");
+    z-index: 1;
 }
 
 .container p {
-    padding-top: 10px;
-    font-size: 1.5vw;
+    padding-top: 5vh;
+    font-size: 1.2vw;
+    color: white;
 }
 
 .container img {
-    width: 50%;
-    padding-top: 50px;
+    width: 40vw;
+    padding-top: 5vh;
 }
 
 .footer a {
     padding: 5px;
     text-decoration: none;
+    font-size: 40px;
+    color: white;
 }
 
 .footer a span {
@@ -38,7 +50,43 @@
     position: absolute;
     overflow: hidden;
     top: -10px;
-   }
+}
+
+.lowerText p {
+    font-size: 1vw;
+}
+
+.fade-in {
+animation: fadeIn 2s;
+-webkit-animation: fadeIn 2s;
+-moz-animation: fadeIn 2s;
+-o-animation: fadeIn 2s;
+-ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 
 @media only screen and (max-width: 600px) {
     .container img {
