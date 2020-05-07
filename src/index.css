@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("http://placekitten.com/200/300");
+}
+
+.container p {
+    padding-top: 10px;
+    font-size: 1.5vw;
+}
+
+.container img {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.footer a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.footer a span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+   }
+
+@media only screen and (max-width: 600px) {
+    .container img {
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    .lowerText {
+        font-size: 13px;
+    }
+
+    .container p {
+        padding-top: 10px;
+        font-size: 1.8vh;
+    }
 }
